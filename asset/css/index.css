@@ -80,13 +80,16 @@ p {
 
 .homepage {
   height: auto;
-  padding-top: 105px;
+  padding-top: 15px;
   padding-left: 195px;
   color: var(--white-color);
   display: flex;
 }
 
-.homepage-title h1 {
+.title {
+  padding-top: 105px;
+  padding-left: 195px;
+  color: var(--white-color);
   font-size: 50px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
@@ -96,7 +99,7 @@ p {
 
 .homepage-text {
   font-size: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   padding-right: 120px;
 }
 
@@ -140,7 +143,7 @@ p {
 
 /* -------------banner-button---------------- */
 .btn {
-  padding-top: 15%;
+  padding-top: 6.5%;
 }
 
 .btn input {
