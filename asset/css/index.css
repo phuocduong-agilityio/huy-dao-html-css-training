@@ -81,9 +81,10 @@ p {
 }
 
 .homepage-text {
-  font-size: 15px;
+  font-size: var(font-size-medium);
   margin-bottom: 50px;
   padding-right: 120px;
+  line-height: var(--line-height-normal);
 }
 
 .homepage-title,
@@ -126,14 +127,14 @@ p {
 
 /* -------------banner-button---------------- */
 .btn {
-  padding-top: 6.5%;
+  padding-top: 8%;
 }
 
 .btn input {
   padding: 14px 25px;
   background-color: var(--blue-color);
   border: none;
-  font-size: 20px;
+  font-size: var(--font-size-large);
   color: var(--white-color);
 }
 
@@ -151,7 +152,7 @@ p {
 .section-benefits h2 {
   color: var(--title-color);
   font-family: Lato;
-  font-size: 35px;
+  font-size: var(--font-size-x-large);
   padding-left: 80px;
   padding-top: 100px;
   padding-bottom: 150px;
@@ -168,7 +169,7 @@ p {
 }
 
 .card-info h3 {
-  font-size: 15px;
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-semibold);
 }
 
