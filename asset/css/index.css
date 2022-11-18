@@ -9,7 +9,6 @@ body {
 p {
   font-family: Lato;
   font-style: normal;
-  font-weight: 400;
 }
 
 /* ------------header---------------------- */
@@ -70,10 +69,11 @@ p {
 }
 
 .title {
+  width: 688px;
   padding-top: 105px;
   padding-left: 195px;
   color: var(--white-color);
-  font-size: 50px;
+  font-size: var(--font-size-xxx-large);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -169,7 +169,7 @@ p {
 
 .card-info h3 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .card-info h3,
