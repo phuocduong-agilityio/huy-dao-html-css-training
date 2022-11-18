@@ -1,0 +1,68 @@
+:root {
+  --white-color: #fff;
+  --blue-color: #006dfe;
+  --title-color: #102746;
+  --footer-color: #0e1d28;
+}
+/* ------------font-------------------- */
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-2;
+  src: url(../font/Lato/Lato-Black.ttf);
+}
+/* ------------body------------------- */
+body {
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+/* -------------tags------------------ */
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+}
+/* ------------header---------------------- */
+#header {
+  width: 100%;
+  height: 962px;
+  background-image: url(../image/header/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ------------menu------------------------- */
+.navbar {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 1082px;
+  padding-top: 42px;
+  padding-left: 195px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-logo img {
+  width: 82px;
+  height: 31px;
+}
+.container-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-family: Lato;
+}
+
+.container-logo,
+.container-menu {
+  flex: 1;
+}
