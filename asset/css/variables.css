@@ -1,0 +1,17 @@
+:root {
+  --white-color: #fff;
+  --blue-color: #006dfe;
+  --title-color: #102746;
+  --footer-color: #0e1d28;
+}
+
+/* ------------font-------------------- */
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-2;
+  src: url(../font/Lato/Lato-Black.ttf);
+}
