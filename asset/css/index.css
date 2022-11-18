@@ -4,45 +4,49 @@
   --title-color: #102746;
   --footer-color: #0e1d28;
 }
+
 /* ------------font-------------------- */
 @font-face {
   font-family: Lato;
   src: url(../font/Lato/Lato-Regular.ttf);
 }
+
 @font-face {
   font-family: Lato-2;
   src: url(../font/Lato/Lato-Black.ttf);
 }
+
 /* ------------body------------------- */
 body {
   height: auto;
   padding: 0;
   margin: 0 auto;
 }
+
 /* -------------tags------------------ */
-a {
-  text-decoration: none;
-  color: var(--white-color);
-}
 p {
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
 }
+
 /* ------------header---------------------- */
 #header {
   width: 100%;
   height: 962px;
-  background-image: url(../image/header/bg-hero.jpg);
+  background: linear-gradient(to top, rgba(16, 39, 70, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/header/bg-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 /* ------------menu------------------------- */
 .navbar {
   width: 100%;
   height: auto;
 }
+
 .container {
   width: 1082px;
   padding-top: 42px;
@@ -51,10 +55,12 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
 .container-logo img {
   width: 82px;
   height: 31px;
 }
+
 .container-menu {
   display: flex;
   list-style: none;
@@ -66,6 +72,12 @@ p {
 .container-menu {
   flex: 1;
 }
+
+.tag-a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 .homepage {
   height: auto;
   padding-top: 105px;
@@ -73,6 +85,7 @@ p {
   color: var(--white-color);
   display: flex;
 }
+
 .homepage-title h1 {
   font-size: 50px;
   -webkit-text-stroke-width: 1px;
@@ -80,18 +93,22 @@ p {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-bottom: 30px;
 }
+
 .homepage-text {
   font-size: 15px;
   margin-bottom: 35px;
   padding-right: 120px;
 }
+
 .homepage-title,
 .btn {
   flex: 1;
 }
+
 .info {
   display: flex;
 }
+
 .question {
   position: relative;
   flex: 1;
@@ -105,9 +122,11 @@ p {
   background-color: var(--white-color);
   top: 32px;
 }
+
 .question-1 {
   margin-left: 30px;
 }
+
 .question-1::before {
   position: absolute;
   content: "";
@@ -118,14 +137,82 @@ p {
   border: 2px solid var(--white-color);
   left: 0;
 }
+
 /* -------------banner-button---------------- */
 .btn {
   padding-top: 15%;
 }
+
 .btn input {
   padding: 14px 25px;
   background-color: var(--blue-color);
   border: none;
   font-size: 20px;
   color: var(--white-color);
+}
+
+/* ------------homepage-intro---------------- */
+.section-benefits {
+  width: 1300px;
+  height: 700px;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  background-color: var(--white-color);
+  margin-top: 15%;
+  margin-left: 135px;
+  font-family: Lato;
+}
+
+.section-benefits h2 {
+  color: var(--title-color);
+  font-family: Lato;
+  font-size: 35px;
+  padding-left: 80px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+/* -----------------------card----------------------------- */
+.benefits-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-info {
+  width: 270px;
+}
+
+.card-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-info h3,
+.card-info p,
+.card-info img {
+  padding-bottom: 30px;
+}
+
+.card-taga {
+  text-decoration: none;
+  color: var(--blue-color);
+  position: relative;
+}
+
+.card-taga::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: var(--blue-color);
+  top: 10px;
+  left: 145px;
+}
+.card-taga::before {
+  position: absolute;
+  content: "";
+  border: 4px solid;
+  border-color: var(--blue-color) var(--blue-color) transparent transparent;
+  transform: rotate(45deg);
+  top: 7px;
+  left: 169px;
 }
