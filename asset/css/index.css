@@ -1,205 +1,257 @@
 /* ------------body------------------- */
 body {
-  height: auto;
-  padding: 0;
-  margin: 0 auto;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Lato';
+}
+/* -----------wrapper ----------------------*/
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* -------------tags------------------ */
 p {
-  font-family: Lato;
-  font-style: normal;
+    font-style: normal;
 }
 
 /* ------------header---------------------- */
 #header {
-  width: 100%;
-  height: 962px;
-  background: linear-gradient(to top, rgba(16, 39, 70, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../image/header/bg-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    width: 100%;
+    height: 962px;
+    background: linear-gradient(to top, rgba(16, 39, 70, 0.7), rgba(0, 0, 0, 0.5)),
+        url(../image/header/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ------------menu------------------------- */
 .navbar {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .container {
-  width: 1082px;
-  padding-top: 42px;
-  padding-left: 195px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    padding-top: 42px;
+    padding-left: 191px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-logo img {
-  width: 82px;
-  height: 31px;
+    width: 82px;
+    height: 31px;
 }
 
 .container-menu {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  font-family: Lato;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 17%;
 }
 
 .container-logo,
 .container-menu {
-  flex: 1;
+    flex: 1;
 }
 
 .tag-a {
-  text-decoration: none;
-  color: var(--white-color);
+    text-decoration: none;
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 18px;
+    margin-right: 82px;
+
+}
+
+/* ----------------------title----------------------------- */
+.title {
+    width: 619px;
+    padding-bottom: 13px;
+    padding-top: 176px;
+    padding-left: 191px;
+    color: var(--white-color);
+    font-size: var(--font-size-xxx-large);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-large);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
 }
 
 /* ----------------banner---------------------------------- */
 .homepage {
-  height: auto;
-  padding-top: 15px;
-  padding-left: 195px;
-  color: var(--white-color);
-  display: flex;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 191px;
+    color: var(--white-color);
 }
-
-.title {
-  width: 688px;
-  padding-top: 105px;
-  padding-left: 195px;
-  color: var(--white-color);
-  font-size: var(--font-size-xxx-large);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-bottom: 30px;
-}
-
 .homepage-text {
-  font-size: var(font-size-medium);
-  margin-bottom: 50px;
-  padding-right: 120px;
-  line-height: var(--line-height-normal);
+    width: 546px;
+    font-size: var(font-size-medium);
+    line-height: var(--line-height-normal);
+    font-size: normal;
+    margin-bottom: 56px;
 }
-
-.homepage-title,
-.btn {
-  flex: 1;
-}
-
-.info {
-  display: flex;
-}
-
 .question {
-  position: relative;
-  flex: 1;
+    position: relative;
 }
-
+.homepage-question{
+    display: flex;
+    flex: 1;
+}
 .question::after {
-  position: absolute;
-  content: "";
-  width: 250px;
-  height: 2px;
-  background-color: var(--white-color);
-  top: 32px;
+    position: absolute;
+    content: "";
+    width: 297px;
+    height: 2px;
+    background-color: var(--white-color);
+    top: 40px;
 }
-
 .question-1 {
-  margin-left: 30px;
+    margin-left: 45px;
+    margin-right: 110px;
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-normal);
 }
 
 .question-1::before {
-  position: absolute;
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background-color: transparent;
-  border: 2px solid var(--white-color);
-  left: 0;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    left: 0;
 }
 
 /* -------------banner-button---------------- */
-.btn {
-  padding-top: 8%;
+.homepage-question input {
+    width: 171px;
+    height: 58px;
+    background-color: var(--blue-color);
+    border: none;
+    font-size: var(--font-size-large);
+    color: var(--white-color);
 }
 
-.btn input {
-  padding: 14px 25px;
-  background-color: var(--blue-color);
-  border: none;
-  font-size: var(--font-size-large);
-  color: var(--white-color);
-}
-
-/* ------------homepage-intro---------------- */
+/* ------------section-benefits---------------- */
 .section-benefits {
-  width: 1300px;
-  height: 700px;
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-  background-color: var(--white-color);
-  margin-top: 15%;
-  margin-left: 135px;
-  font-family: Lato;
+    width: 1262px;
+    height: 655px;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    background-color: var(--white-color);
+    margin-left: 106px;
+    font-family: Lato;
+    margin-top: 153px;
 }
 
 .section-benefits h2 {
-  color: var(--title-color);
-  font-family: Lato;
-  font-size: var(--font-size-x-large);
-  padding-left: 80px;
-  padding-top: 100px;
-  padding-bottom: 150px;
+    color: var(--title-color);
+    font-size: var(--font-size-x-large);
+    padding-left: 99px;
+    padding-top: 93px;
+    padding-bottom: 120px;
 }
 
 /* -----------------------card----------------------------- */
 .benefits-card {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    padding-left: 100px;
 }
 
 .card-info {
-  width: 270px;
+    width: 317px;
+    margin-right: 74px;
+}
+.card-info img{
+    width: 66px;
+    height: 66px;
 }
 
 .card-info h3 {
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-semibold);
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-normal);
+    padding-top: 37px;
 }
-
-.card-info h3,
-.card-info p,
-.card-info img {
-  padding-bottom: 30px;
+.card-info p{
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-normal);
+    margin-top: 26px;
+    margin-bottom: 39px;
 }
-
 .card-taga {
-  text-decoration: none;
-  color: var(--blue-color);
-  position: relative;
+    text-decoration: none;
+    color: var(--blue-color);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-normal);
+    position: relative;
 }
 
 .card-taga::after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: var(--blue-color);
-  top: 10px;
-  left: 145px;
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 1px;
+    background-color: var(--blue-color);
+    top: 10px;
+    left: 145px;
 }
+
 .card-taga::before {
-  position: absolute;
-  content: "";
-  border: 4px solid;
-  border-color: var(--blue-color) var(--blue-color) transparent transparent;
-  transform: rotate(45deg);
-  top: 7px;
-  left: 169px;
+    position: absolute;
+    content: "";
+    border: 4px solid;
+    border-color: var(--blue-color) var(--blue-color) transparent transparent;
+    transform: rotate(45deg);
+    top: 7px;
+    left: 169px;
+}
+
+/* ------------------------main------------------------- */
+.main-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* -----------------photo-------------------------- */
+.photo {
+    width: 1300px;
+    height: 700px;
+    background-color: var(--white-color);
+    margin-top: 45%;
+    margin-left: 135px;
+}
+
+/* -----------------------photo-title-------------- */
+
+.photo-title{
+    display: flex;
+    flex: 1;
+}
+.photo-title h2{
+    margin-right: 53%;
+    color: var(--title-color);
+    font-size: var(--font-size-x-large);
+    margin-bottom: 50px;
+}
+.photo-title img{
+    margin-right: 35px;
+    margin-bottom: 35px;
 }
