@@ -3,19 +3,20 @@
   --blue-color: #006dfe;
   --title-color: #102746;
   --footer-color: #0e1d28;
-  --font-weight-semibold:600;
+  --font-weight-semibold:500;
   --font-weight-bold:700;
-  --font-size-medium:15px;
-  --font-size-large:20px;
+  --font-size-medium:16px;
+  --font-size-large:18px;
   --font-size-x-large:35px;
   --font-size-xxx-large:50px;
-  --line-height-normal:22px;
+  --line-height-normal:24px;
+  --line-height-large:60px;
 
 }
 
 /* ------------font-------------------- */
 @font-face {
-  font-family: Lato;
+  font-family: 'Lato';
   src: url(../font/Lato/Lato-Regular.ttf);
 }
 
