@@ -193,7 +193,8 @@ p {
     margin-top: 26px;
     margin-bottom: 39px;
 }
-.card-taga {
+.card-taga, 
+.taga-1 {
     text-decoration: none;
     color: var(--blue-color);
     font-size: var(--font-size-large);
@@ -202,7 +203,8 @@ p {
     position: relative;
 }
 
-.card-taga::after {
+.card-taga::after,
+.taga-1::after {
     position: absolute;
     content: "";
     width: 29px;
@@ -212,7 +214,8 @@ p {
     left: 145px;
 }
 
-.card-taga::before {
+.card-taga::before,
+.taga-1::before {
     position: absolute;
     content: "";
     border: 4px solid;
@@ -220,38 +223,4 @@ p {
     transform: rotate(45deg);
     top: 7px;
     left: 169px;
-}
-
-/* ------------------------main------------------------- */
-.main-wrapper {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-}
-
-/* -----------------photo-------------------------- */
-.photo {
-    width: 1300px;
-    height: 700px;
-    background-color: var(--white-color);
-    margin-top: 45%;
-    margin-left: 135px;
-}
-
-/* -----------------------photo-title-------------- */
-
-.photo-title{
-    display: flex;
-    flex: 1;
-}
-.photo-title h2{
-    margin-right: 53%;
-    color: var(--title-color);
-    font-size: var(--font-size-x-large);
-    margin-bottom: 50px;
-}
-.photo-title img{
-    margin-right: 35px;
-    margin-bottom: 35px;
 }
