@@ -92,7 +92,7 @@ p {
 }
 .hero-text {
     width: 546px;
-    font-size: var(font-size-medium);
+    font-size: var(--font-size-medium);
     line-height: var(--line-height-normal);
     font-size: normal;
     margin-bottom: 56px;
