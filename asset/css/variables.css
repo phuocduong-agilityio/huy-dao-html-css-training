@@ -1,14 +1,21 @@
 :root {
-  --white-color: #fff;
-  --blue-color: #006dfe;
+  /* -------------color-------------------- */
+  --primary-color: #fff;
+  --secondary-color: #006dfe;
   --title-color: #102746;
   --footer-color: #0e1d28;
+
+  /* -------------font-weight-------------- */
   --font-weight-semibold:500;
   --font-weight-bold:700;
+
+  /* -------------font-size---------------- */
   --font-size-medium:16px;
   --font-size-large:18px;
   --font-size-x-large:35px;
   --font-size-xxx-large:50px;
+
+  /* -------------line-height-------------- */
   --line-height-normal:24px;
   --line-height-large:60px;
 
