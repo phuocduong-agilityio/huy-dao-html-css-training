@@ -1,12 +1,16 @@
+@import url(../css/variables.css);
+@import url(../css/reset.css);
+
 /* ------------body------------------- */
 body {
   height: auto;
   padding: 0;
   margin: 0 auto;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
+
 /* -----------wrapper ----------------------*/
-.wrapper{
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -59,21 +63,21 @@ p {
   flex: 1;
 }
 
-.tag-a {
+.nav-item {
   text-decoration: none;
-  color: var(--white-color);
+  color: var(--primary-color);
   font-style: normal;
   font-size: 18px;
   margin-right: 82px;
 }
 
-/* ----------------------title----------------------------- */
+/* ----------------------h1----------------------------- */
 .title {
   width: 619px;
   padding-bottom: 13px;
   padding-top: 176px;
   padding-left: 191px;
-  color: var(--white-color);
+  color: var(--primary-color);
   font-size: var(--font-size-xxx-large);
   font-style: normal;
   font-weight: var(--font-weight-semibold);
@@ -83,36 +87,41 @@ p {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ----------------banner---------------------------------- */
-.homepage {
+/* ---------------bg-hero---------------------------------- */
+.bg-hero {
   height: auto;
   padding-top: 15px;
   padding-left: 191px;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
-.homepage-text {
+
+.hero-text {
   width: 546px;
-  font-size: var(font-size-medium);
+  font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
   font-size: normal;
   margin-bottom: 56px;
 }
-.question {
-  position: relative;
-}
-.homepage-question {
+
+.hero-question {
   display: flex;
   flex: 1;
 }
+
+.question {
+  position: relative;
+}
+
 .question::after {
   position: absolute;
   content: "";
   width: 297px;
   height: 2px;
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   top: 40px;
 }
-.question-1 {
+
+.question-item {
   margin-left: 45px;
   margin-right: 110px;
   font-style: normal;
@@ -121,25 +130,26 @@ p {
   line-height: var(--line-height-normal);
 }
 
-.question-1::before {
+.question-item::before {
   position: absolute;
   content: "";
   width: 20px;
   height: 20px;
   border-radius: 100%;
   background-color: transparent;
-  border: 2px solid var(--white-color);
+  border: 2px solid var(--primary-color);
   left: 0;
 }
 
-/* -------------banner-button---------------- */
-.homepage-question input {
+/* -------------bg-button---------------- */
+.btn-primary {
   width: 171px;
   height: 58px;
-  background-color: var(--blue-color);
+  background-color: var(--secondary-color);
   border: none;
   font-size: var(--font-size-large);
-  color: var(--white-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 /* ------------section-benefits---------------- */
@@ -147,13 +157,12 @@ p {
   width: 1262px;
   height: 655px;
   box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   margin-left: 106px;
-  font-family: Lato;
   margin-top: 153px;
 }
 
-.section-benefits h2 {
+.benefits-title {
   color: var(--title-color);
   font-size: var(--font-size-x-large);
   padding-left: 99px;
@@ -171,63 +180,59 @@ p {
   width: 317px;
   margin-right: 74px;
 }
-.card-info img {
+
+.info-image {
   width: 66px;
   height: 66px;
 }
 
-.card-info h3 {
-  font-family: "Lato";
+.info-title {
   font-style: normal;
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-normal);
   padding-top: 37px;
 }
-.card-info p {
+
+.info-text {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
   margin-top: 26px;
   margin-bottom: 39px;
 }
-.card-taga,
-.taga-1,
-.taga-2,
-.taga-3 {
+.card-item {
+  text-transform: uppercase;
   text-decoration: none;
-  color: var(--blue-color);
-  font-size: var(--font-size-medium);
+  color: var(--secondary-color);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-normal);
+  padding: 10px 40px 10px 0;
   position: relative;
 }
-
-.card-taga::after,
-.taga-1::after,
-.taga-2::after,
-.taga-3::after {
+.card-item::after {
   position: absolute;
   content: "";
   width: 29px;
   height: 1px;
-  background-color: var(--blue-color);
-  top: 10px;
-  left: 145px;
+  background-color: var(--secondary-color);
+  top: 50%;
+  right: -30%;
+  transform: translateY(-50%);
 }
-
-.card-taga::before,
-.taga-1::before,
-.taga-2::before,
-.taga-3::before {
+.card-item::before {
   position: absolute;
   content: "";
   border: 4px solid;
-  border-color: var(--blue-color) var(--blue-color) transparent transparent;
-  transform: rotate(45deg);
-  top: 7px;
-  left: 169px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  right: calc(-30% - 8px);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* ------------------------main------------------------- */
+/* -----------------------main----------------------------- */
 .main-wrapper {
   width: 100%;
   height: auto;
@@ -235,164 +240,240 @@ p {
   margin: 0 auto;
 }
 
-/* -----------------photo-------------------------- */
-.photo {
-  margin-top: 38%;
-  margin-left: 88px;
-  margin-bottom: 131px;
+/* -----------------------photo-------------------------- */
+.section-trip {
+  padding-top: 38%;
+  padding-left: 88px;
+  padding-bottom: 131px;
 }
 
 /* -----------------------photo-title-------------- */
-.photo-title {
+.trip-photo {
   display: flex;
-  text-align: center;
+  align-items: center;
+  padding: 40px 0;
 }
-.title-1 {
+
+.photo-title {
   color: var(--title-color);
   font-size: var(--font-size-x-large);
   font-weight: var(--font-weight-semibold);
   line-height: 42px;
-  margin-bottom: 46px;
+  padding-right: 47%;
+  padding-bottom: 10px;
   position: relative;
 }
-.taga-1 {
-  padding-top: 10px;
-  left: 49%;
+
+.photo-title::after {
+  position: absolute;
+  content: "";
+  width: 255px;
+  height: 0.9mm;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 0;
 }
-.taga-1::after {
-  top: 18px;
-}
-.taga-1::before {
-  top: 15px;
-}
-.photo-title img {
+
+.trip-item {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.title-1::before,
-.visit-title::before {
-  position: absolute;
-  content: "";
-  width: 235px;
-  border: 2px solid var(--blue-color);
-  background-color: var(--blue-color);
-  top: 50px;
+
+/* -------------------------infomation-details-----------------*/
+.information-details {
+  padding-left: 85px;
 }
 
-/* ------------------------------infomation-view -----------------*/
-.infomation {
-  margin-left: 85px;
-}
-.infomation-view,
-.infomation-view1 {
+.details-card {
   display: flex;
+  gap: 108px;
 }
-.view-title {
+
+.card-title {
   font-weight: var(--font-weight-bold);
   font-size: 30px;
   line-height: 40px;
   color: var(--title-color);
   padding-top: 20px;
   padding-bottom: 85px;
-  margin-left: 108px;
 }
-.text {
+
+.card-text {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
   padding-bottom: 58px;
-  width: 65%;
-  margin-left: 108px;
-}
-.taga-2 {
-  margin-left: 108px;
+  width: 80%;
 }
 
-.taga-2::after {
-  left: 170px;
+.details-card-bottom {
+  flex-direction: row-reverse;
+  padding-top: 76px;
 }
-.taga-2::before {
-  left: 194px;
-}
-.infomation-view1 {
-  margin-top: 76px;
-}
-.view-title1 {
-  font-weight: var(--font-weight-bold);
-  font-size: 30px;
-  line-height: 40px;
-  color: var(--title-color);
+
+.card-box-bottom {
   padding-left: 53px;
-  padding-bottom: 85px;
-  padding-top: 20px;
+}
+
+.card-title-bottom {
   width: 357px;
 }
-.text-1 {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
-  padding-bottom: 58px;
-  padding-left: 53px;
-  width: 492px;
-  padding-right: 108px;
-}
-.taga-3 {
-  padding-left: 53px;
-}
-.taga-3::after {
-  left: 255px;
-}
-.taga-3::before {
-  left: 279px;
+
+.card-text-bottom {
+  width: 505px;
 }
 
-/* -------footer-------------------------- */
+.card-photo-bottom {
+  padding-right: 78px;
+}
+
+/* -------------------visit-details------------------- */
+.visit-details {
+  padding-top: 140px;
+  padding-left: 80px;
+}
+.photo-title-visit{
+  margin-bottom: 64px;
+}
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap:57px;
+}
+
+.visit-card {
+  background-image: url(../image/places/nagoya.jpg);
+  width: 386px;
+  height: 377px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card-icon {
+  background-color: rgba(21, 24, 36, 0.6);
+  position: absolute;
+  width: 100%;
+  color: var(--primary-color);
+  display: flex;
+  text-transform: uppercase;
+  height: 55px;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+}
+.icon-box,
+.icon-text {
+  flex: 1;
+}
+
+.icon-box {
+  display: flex;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-text {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-normal);
+  padding-left: 25px;
+}
+
+.icon-photo {
+  width: 16px;
+  height: 15px;
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+/* -----------------------------card-more------------------- */
+.card-more {
+  width: 386px;
+  padding-top: 62px;
+}
+
+.text-more {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
+  padding-bottom: 14px;
+  width: 362px;
+}
+
+.btn-more {
+  width: 118px;
+  height: 42px;
+  font-size: var(--font-size-medium);
+  line-height: 19px;
+}
+
+.visit-card-niigita{
+  background-image: url(../image/trip/snow.jpg);
+}
+
+.visit-card-osaka{
+  background-image: url(../image/trip/osaka.jpg);
+}
+
+.visit-card-saitama{
+  background-image: url(../image/trip/saitama.jpg);
+}
+
+.visit-card-ueno{
+  background-image: url(../image/trip/ueno.jpg);
+}
+
+.visit-card-shibuya{
+  background-image: url(../image/trip/shibuya.jpg);
+}
+
+/* ---------------------footer----------------------- */
 .video{
-    margin-top: 144px;
-    background-image: url(../image/footer/tokyo-city.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 609px;
-    text-align: center;
+  margin-top: 144px;
+  background-image: url(../image/footer/tokyo-city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 609px;
+  text-align: center;
 }
 .video img{
-    margin-top: 249px;
+  margin-top: 249px;
 }
 .footer-info{
-    background-color: #0E1D28;
-    padding-top: 119px;
-    padding-left: 194px;
-    padding-right: 167px;
-    padding-bottom: 118px;
-    display: flex;
-    justify-content: space-between;
+  background-color: #0E1D28;
+  padding-top: 119px;
+  padding-left: 194px;
+  padding-right: 167px;
+  padding-bottom: 118px;
+  display: flex;
+  justify-content: space-between;
 }
 .info-logo,
 .box-info{
-    flex: 1;
+  flex: 1;
 }
 .info-logo img{
-    width: 170px;
-    height: 64px;
+  width: 170px;
+  height: 64px;
 }
 .info-1, 
 .info-1 a{
-    color: var(--white-color);
+  color: var(--white-color);
 }
 .box-info{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .info-1 h5{
-        font-size: var(--font-size-large);
-        font-weight: var(--font-weight-semibold);
-        list-style: var(--line-height-normal);
+      font-size: var(--font-size-large);
+      font-weight: var(--font-weight-semibold);
+      list-style: var(--line-height-normal);
 }
 .info-1 a{
-    text-decoration: none;
-    font-size: var(--font-size-medium);
-    line-height: var(--line-height-normal);
+  text-decoration: none;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
 }
-
-
-
