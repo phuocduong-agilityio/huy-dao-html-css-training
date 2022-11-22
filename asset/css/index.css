@@ -63,7 +63,7 @@ p {
   flex: 1;
 }
 
-.navbar-item {
+.nav-item {
     text-decoration: none;
     color: var(--primary-color);
     font-style: normal;
@@ -201,11 +201,13 @@ p {
     margin-bottom: 39px;
 }
 .card-item {
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--secondary-color);
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-normal);
+    padding:10px 40px 10px 0;
     position: relative;
 }
 .card-item::after {
@@ -214,19 +216,23 @@ p {
     width: 29px;
     height: 1px;
     background-color: var(--secondary-color);
-    top: 10px;
-    left: 145px;
+    top: 50%;
+    right: -30%;
+    transform: translateY(-50%);
 }
 .card-item::before {
     position: absolute;
     content: "";
     border: 4px solid;
-    border-color: var(--secondary-color) var(--secondary-color) transparent transparent;
-    transform: rotate(45deg);
-    top: 6px;
-    left: 169px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    right: calc(-30% - 8px);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+/* -----------------------main----------------------------- */
 .main-wrapper {
   width: 100%;
   height: auto;
@@ -234,7 +240,7 @@ p {
   margin: 0 auto;
 }
 
-/* -----------------photo-------------------------- */
+/* -----------------------photo-------------------------- */
 .section-trip {
   padding-top: 38%;
   padding-left: 88px;
@@ -247,6 +253,7 @@ p {
   align-items: center;
   padding: 40px 0;
 }
+
 .photo-title {
   color: var(--title-color);
   font-size: var(--font-size-x-large);
@@ -271,15 +278,16 @@ p {
   margin-bottom: 10px;
 }
 
-
-/* ------------------------------infomation-view -----------------*/
-.infomation-details {
+/* -------------------------infomation-details-----------------*/
+.information-details{
   padding-left: 85px;
 }
-.details-card,
-.infomation-view1 {
+
+.details-card {
   display: flex;
+  gap:108px;
 }
+
 .card-title {
   font-weight: var(--font-weight-bold);
   font-size: 30px;
@@ -287,45 +295,32 @@ p {
   color: var(--title-color);
   padding-top: 20px;
   padding-bottom: 85px;
-  margin-left: 108px;
 }
+
 .card-text {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
   padding-bottom: 58px;
-  width: 65%;
-  margin-left: 108px;
+  width: 80%;
 }
-/* .card-more {
-  padding-left: 108px;
-} */
-.infomation-view1 {
-  margin-top: 76px;
+
+.details-card-bottom{
+  flex-direction: row-reverse;
+  padding-top: 76px;
 }
-.view-title1 {
-  font-weight: var(--font-weight-bold);
-  font-size: 30px;
-  line-height: 40px;
-  color: var(--title-color);
+
+.card-box-bottom{
   padding-left: 53px;
-  padding-bottom: 85px;
-  padding-top: 20px;
+}
+
+.card-title-bottom{
   width: 357px;
 }
-.text-1 {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
-  padding-bottom: 58px;
-  padding-left: 53px;
-  width: 492px;
-  padding-right: 108px;
+
+.card-text-bottom{
+  width: 505px;
 }
-.taga-3 {
-  padding-left: 53px;
-}
-.taga-3::after {
-  left: 255px;
-}
-.taga-3::before {
-  left: 279px;
+
+.card-photo-bottom{
+  padding-right: 78px;
 }
