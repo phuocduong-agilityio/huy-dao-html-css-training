@@ -439,40 +439,43 @@ p {
   height: 609px;
   text-align: center;
 }
-.video img{
+.control-video{
   margin-top: 249px;
 }
-.footer-info{
+.odigo-info{
   background-color: #0E1D28;
   padding-top: 119px;
   padding-left: 194px;
   padding-right: 167px;
-  padding-bottom: 118px;
+  height: 370px;
   display: flex;
-  justify-content: space-between;
+  gap: 356px;
+  justify-items: center;
 }
-.info-logo,
-.box-info{
+
+.info-container,
+.odigo-info{
   flex: 1;
 }
-.info-logo img{
+
+.odigo-logo{
   width: 170px;
   height: 64px;
 }
-.info-1, 
-.info-1 a{
-  color: var(--white-color);
+.info-heading, 
+.info-item{
+  color: var(--primary-color);
 }
-.box-info{
+.info-container{
   display: flex;
   justify-content: space-between;
 }
-.info-1 h5{
+.info-heading{
       font-size: var(--font-size-large);
       font-weight: var(--font-weight-semibold);
       list-style: var(--line-height-normal);
 }
-.info-1 a{
+.info-item{
   text-decoration: none;
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
