@@ -3,10 +3,10 @@
 
 /* ------------body------------------- */
 body {
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-    font-family: 'Lato';
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Lato';
 }
 
 /* -----------wrapper ----------------------*/
@@ -17,53 +17,53 @@ body {
 
 /* -------------tags------------------ */
 p {
-    font-style: normal;
+  font-style: normal;
 }
 
 /* ------------header---------------------- */
 #header {
-    width: 100%;
-    height: 962px;
-    background: linear-gradient(to top, rgba(16, 39, 70, 0.7), rgba(0, 0, 0, 0.5)),
-        url(../image/header/bg-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 962px;
+  background: linear-gradient(to top, rgba(16, 39, 70, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../image/header/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* ------------menu------------------------- */
 .navbar {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-    width: 100%;
-    padding-top: 42px;
-    padding-left: 191px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  padding-top: 42px;
+  padding-left: 191px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container-logo img {
-    width: 82px;
-    height: 31px;
+  width: 82px;
+  height: 31px;
 }
 
 .container-menu {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding-right: 17%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 17%;
 }
 
 .container-logo,
 .container-menu {
-    flex: 1;
+  flex: 1;
 }
 
-.navbar-item {
+.nav-item {
     text-decoration: none;
     color: var(--primary-color);
     font-style: normal;
@@ -172,13 +172,13 @@ p {
 
 /* -----------------------card----------------------------- */
 .benefits-card {
-    display: flex;
-    padding-left: 100px;
+  display: flex;
+  padding-left: 100px;
 }
 
 .card-info {
-    width: 317px;
-    margin-right: 74px;
+  width: 317px;
+  margin-right: 74px;
 }
 
 .info-image {
@@ -200,32 +200,127 @@ p {
     margin-top: 26px;
     margin-bottom: 39px;
 }
-
 .card-item {
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--secondary-color);
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-normal);
+    padding:10px 40px 10px 0;
     position: relative;
 }
-
 .card-item::after {
     position: absolute;
     content: "";
     width: 29px;
     height: 1px;
     background-color: var(--secondary-color);
-    top: 10px;
-    left: 145px;
+    top: 50%;
+    right: -30%;
+    transform: translateY(-50%);
 }
-
 .card-item::before {
     position: absolute;
     content: "";
     border: 4px solid;
-    border-color: var(--secondary-color) var(--secondary-color) transparent transparent;
-    transform: rotate(45deg);
-    top: 7px;
-    left: 169px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    right: calc(-30% - 8px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* -----------------------main----------------------------- */
+.main-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* -----------------------photo-------------------------- */
+.section-trip {
+  padding-top: 38%;
+  padding-left: 88px;
+  padding-bottom: 131px;
+}
+
+/* -----------------------photo-title-------------- */
+.trip-photo {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.photo-title {
+  color: var(--title-color);
+  font-size: var(--font-size-x-large);
+  font-weight: var(--font-weight-semibold);
+  line-height: 42px;
+  padding-right: 47%;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.photo-title::after {
+  position: absolute;
+  content: "";
+  width: 255px;
+  height: 0.9mm;
+  background-color: var(--secondary-color);
+  bottom: 0;left: 0;
+}
+
+.trip-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------infomation-details-----------------*/
+.information-details{
+  padding-left: 85px;
+}
+
+.details-card {
+  display: flex;
+  gap:108px;
+}
+
+.card-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--title-color);
+  padding-top: 20px;
+  padding-bottom: 85px;
+}
+
+.card-text {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
+  padding-bottom: 58px;
+  width: 80%;
+}
+
+.details-card-bottom{
+  flex-direction: row-reverse;
+  padding-top: 76px;
+}
+
+.card-box-bottom{
+  padding-left: 53px;
+}
+
+.card-title-bottom{
+  width: 357px;
+}
+
+.card-text-bottom{
+  width: 505px;
+}
+
+.card-photo-bottom{
+  padding-right: 78px;
 }
