@@ -200,6 +200,7 @@ p {
   margin-top: 26px;
   margin-bottom: 39px;
 }
+
 .card-item {
   text-transform: uppercase;
   text-decoration: none;
@@ -210,6 +211,7 @@ p {
   padding: 10px 40px 10px 0;
   position: relative;
 }
+
 .card-item::after {
   position: absolute;
   content: "";
@@ -220,6 +222,7 @@ p {
   right: -30%;
   transform: translateY(-50%);
 }
+
 .card-item::before {
   position: absolute;
   content: "";
@@ -331,13 +334,15 @@ p {
   padding-top: 140px;
   padding-left: 80px;
 }
-.photo-title-visit{
+
+.photo-title-visit {
   margin-bottom: 64px;
 }
-.card-wrapper{
+
+.card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap:57px;
+  gap: 57px;
 }
 
 .visit-card {
@@ -360,6 +365,7 @@ p {
   justify-content: space-around;
   bottom: 0;
 }
+
 .icon-box,
 .icon-text {
   flex: 1;
@@ -408,22 +414,22 @@ p {
   line-height: 19px;
 }
 
-.visit-card-niigita{
+.visit-card-niigita {
   background-image: url(../image/trip/snow.jpg);
 }
 
-.visit-card-osaka{
+.visit-card-osaka {
   background-image: url(../image/trip/osaka.jpg);
 }
 
-.visit-card-saitama{
+.visit-card-saitama {
   background-image: url(../image/trip/saitama.jpg);
 }
 
-.visit-card-ueno{
+.visit-card-ueno {
   background-image: url(../image/trip/ueno.jpg);
 }
 
-.visit-card-shibuya{
+.visit-card-shibuya {
   background-image: url(../image/trip/shibuya.jpg);
 }
