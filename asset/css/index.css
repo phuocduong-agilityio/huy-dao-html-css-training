@@ -200,6 +200,7 @@ p {
   margin-top: 26px;
   margin-bottom: 39px;
 }
+
 .card-item {
   text-transform: uppercase;
   text-decoration: none;
@@ -210,6 +211,7 @@ p {
   padding: 10px 40px 10px 0;
   position: relative;
 }
+
 .card-item::after {
   position: absolute;
   content: "";
@@ -220,6 +222,7 @@ p {
   right: -30%;
   transform: translateY(-50%);
 }
+
 .card-item::before {
   position: absolute;
   content: "";
@@ -233,7 +236,7 @@ p {
 }
 
 /* -----------------------main----------------------------- */
-.main-wrapper {
+#main-wrapper {
   width: 100%;
   height: auto;
   padding: 0;
