@@ -482,4 +482,6 @@ p {
   text-decoration: none;
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
+  display: flex;
+  flex-wrap: wrap;
 }
