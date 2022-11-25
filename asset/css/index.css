@@ -236,7 +236,7 @@ p {
 }
 
 /* -----------------------main----------------------------- */
-.main-wrapper {
+#main-wrapper {
   width: 100%;
   height: auto;
   padding: 0;
