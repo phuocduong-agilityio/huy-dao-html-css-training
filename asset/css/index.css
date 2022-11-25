@@ -149,6 +149,7 @@ p {
   border: none;
   font-size: var(--font-size-large);
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 /* ------------section-benefits---------------- */
@@ -199,6 +200,7 @@ p {
   margin-top: 26px;
   margin-bottom: 39px;
 }
+
 .card-item {
   text-transform: uppercase;
   text-decoration: none;
@@ -209,6 +211,7 @@ p {
   padding: 10px 40px 10px 0;
   position: relative;
 }
+
 .card-item::after {
   position: absolute;
   content: "";
@@ -219,6 +222,7 @@ p {
   right: -30%;
   transform: translateY(-50%);
 }
+
 .card-item::before {
   position: absolute;
   content: "";
@@ -323,4 +327,109 @@ p {
 
 .card-photo-bottom {
   padding-right: 78px;
+}
+
+/* -------------------visit-details------------------- */
+.visit-details {
+  padding-top: 140px;
+  padding-left: 80px;
+}
+
+.photo-title-visit {
+  margin-bottom: 64px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 57px;
+}
+
+.visit-card {
+  background-image: url(../image/places/nagoya.jpg);
+  width: 386px;
+  height: 377px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card-icon {
+  background-color: rgba(21, 24, 36, 0.6);
+  position: absolute;
+  width: 100%;
+  color: var(--primary-color);
+  display: flex;
+  text-transform: uppercase;
+  height: 55px;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.icon-box,
+.icon-text {
+  flex: 1;
+}
+
+.icon-box {
+  display: flex;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-text {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-normal);
+  padding-left: 25px;
+}
+
+.icon-photo {
+  width: 16px;
+  height: 15px;
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+/* -----------------------------card-more------------------- */
+.card-more {
+  width: 386px;
+  padding-top: 62px;
+}
+
+.text-more {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
+  padding-bottom: 14px;
+  width: 362px;
+}
+
+.btn-more {
+  width: 118px;
+  height: 42px;
+  font-size: var(--font-size-medium);
+  line-height: 19px;
+}
+
+.visit-card-niigita {
+  background-image: url(../image/trip/snow.jpg);
+}
+
+.visit-card-osaka {
+  background-image: url(../image/trip/osaka.jpg);
+}
+
+.visit-card-saitama {
+  background-image: url(../image/trip/saitama.jpg);
+}
+
+.visit-card-ueno {
+  background-image: url(../image/trip/ueno.jpg);
+}
+
+.visit-card-shibuya {
+  background-image: url(../image/trip/shibuya.jpg);
 }
