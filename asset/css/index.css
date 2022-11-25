@@ -432,19 +432,12 @@ p {
 }
 
 /* ---------------------footer----------------------- */
-.video{
-  margin-top: 144px;
-  background-image: url(../image/footer/tokyo-city.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.video-demo{
   width: 100%;
   height: 609px;
-  text-align: center;
+  margin-top: 144px; 
 }
-.control-video{
-  margin-top: 249px;
-}
+
 .odigo-info{
   background-color: #0E1D28;
   padding-top: 119px;
