@@ -304,8 +304,17 @@ p {
 .card-text {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
-  padding-bottom: 58px;
   width: 80%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 75px;
+  margin-bottom: 58px;
+}
+
+.card-text:hover{
+  overflow: visible;
 }
 
 .details-card-bottom {
@@ -435,14 +444,14 @@ p {
 }
 
 /* ---------------------footer----------------------- */
-.video-demo{
+.video-demo {
   width: 100%;
   height: 609px;
-  margin-top: 144px; 
+  margin-top: 144px;
 }
 
-.odigo-info{
-  background-color: #0E1D28;
+.odigo-info {
+  background-color: #0e1d28;
   padding-top: 119px;
   padding-left: 194px;
   padding-right: 167px;
@@ -453,28 +462,28 @@ p {
 }
 
 .info-container,
-.odigo-info{
+.odigo-info {
   flex: 1;
 }
 
-.odigo-logo{
+.odigo-logo {
   width: 170px;
   height: 64px;
 }
-.info-heading, 
-.info-item{
+.info-heading,
+.info-item {
   color: var(--primary-color);
 }
-.info-container{
+.info-container {
   display: flex;
   justify-content: space-between;
 }
-.info-heading{
-      font-size: var(--font-size-large);
-      font-weight: var(--font-weight-semibold);
-      list-style: var(--line-height-normal);
+.info-heading {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semibold);
+  list-style: var(--line-height-normal);
 }
-.info-item{
+.info-item {
   text-decoration: none;
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
