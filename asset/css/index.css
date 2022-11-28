@@ -248,6 +248,7 @@ p {
   padding-top: 38%;
   padding-left: 88px;
   padding-bottom: 131px;
+  padding-right: 88px;
 }
 
 /* -----------------------photo-title-------------- */
@@ -255,6 +256,11 @@ p {
   display: flex;
   align-items: center;
   padding: 40px 0;
+}
+
+.trip-box{
+  display: flex;
+  justify-content: space-between;
 }
 
 .photo-title {
