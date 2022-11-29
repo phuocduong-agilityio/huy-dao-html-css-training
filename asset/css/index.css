@@ -64,11 +64,17 @@ p {
 }
 
 .nav-item {
+  display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
   font-style: normal;
   font-size: 18px;
   margin-right: 82px;
+  transition: 0.5s linear;
+}
+
+.nav-item:hover {
+  transform: translateY(-10px);
 }
 
 /* ----------------------h1----------------------------- */
@@ -147,7 +153,9 @@ p {
   height: 58px;
   background-color: var(--secondary-color);
   border: none;
-  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semibold);
+  font-size: 24px;
+  line-height: 29px;
   color: var(--primary-color);
   text-transform: uppercase;
 }
@@ -202,6 +210,7 @@ p {
 }
 
 .card-item {
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-color);
@@ -210,6 +219,11 @@ p {
   line-height: var(--line-height-normal);
   padding: 10px 40px 10px 0;
   position: relative;
+  transition: 0.5s linear;
+}
+
+.card-item:hover{
+  transform: translateY(-10px);
 }
 
 .card-item::after {
@@ -258,7 +272,7 @@ p {
   padding: 40px 0;
 }
 
-.trip-box{
+.trip-box {
   display: flex;
   justify-content: space-between;
 }
@@ -319,7 +333,7 @@ p {
   margin-bottom: 58px;
 }
 
-.card-text:hover{
+.card-text:hover {
   overflow: visible;
 }
 
