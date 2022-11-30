@@ -109,42 +109,64 @@ p {
   margin-bottom: 56px;
 }
 
-.hero-question {
+.hero-form {
   display: flex;
   flex: 1;
 }
 
-.question {
+/* ------------------------form-check-------------- */
+.form-check {
+  position: relative;
+  display: flex;
+}
+
+.form-check-label {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  margin-right: 23px;
+  background-color: transparent;
+  cursor: pointer;
   position: relative;
 }
 
-.question::after {
+.form-check-label::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[class="form-check-input"]:checked + .form-check-label::after {
+  background-color: white;
+}
+
+.form-check::after {
   position: absolute;
   content: "";
   width: 297px;
   height: 2px;
   background-color: var(--primary-color);
-  top: 40px;
+  bottom: 12px;
+  left: 0;
 }
 
-.question-item {
-  margin-left: 45px;
-  margin-right: 110px;
+.form-check-control {
   font-style: normal;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-large);
   line-height: var(--line-height-normal);
-}
-
-.question-item::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
-  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+  border: none;
+  padding-right: 50px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* -------------bg-button---------------- */
@@ -222,7 +244,7 @@ p {
   transition: 0.5s linear;
 }
 
-.card-item:hover{
+.card-item:hover {
   transform: translateY(-10px);
 }
 
