@@ -37,7 +37,7 @@ p {
   height: auto;
 }
 
-.container {
+.container-fluid {
   width: 100%;
   padding-top: 42px;
   padding-left: 191px;
@@ -46,24 +46,19 @@ p {
   align-items: center;
 }
 
-.container-logo img {
+.navbar-icon {
   width: 82px;
   height: 31px;
 }
 
-.container-menu {
+.navbar-nav {
   display: flex;
   list-style: none;
   justify-content: space-between;
   padding-right: 17%;
 }
 
-.container-logo,
-.container-menu {
-  flex: 1;
-}
-
-.nav-item {
+.nav-link {
   display: inline-block;
   text-decoration: none;
   color: var(--primary-color);
@@ -73,16 +68,22 @@ p {
   transition: 0.5s linear;
 }
 
-.nav-item:hover {
+.nav-link:hover {
   transform: translateY(-10px);
 }
 
-/* ----------------------h1----------------------------- */
-.title {
+/* ---------------bg-hero---------------------------------- */
+.homepage-hero {
+  height: auto;
+  padding-top: 15px;
+  padding-left: 191px;
+  color: var(--primary-color);
+}
+
+.hero-title {
   width: 619px;
   padding-bottom: 13px;
   padding-top: 176px;
-  padding-left: 191px;
   color: var(--primary-color);
   font-size: var(--font-size-xxx-large);
   font-style: normal;
@@ -91,14 +92,6 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* ---------------bg-hero---------------------------------- */
-.bg-hero {
-  height: auto;
-  padding-top: 15px;
-  padding-left: 191px;
-  color: var(--primary-color);
 }
 
 .hero-text {
@@ -169,17 +162,21 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   margin-bottom: 30px;
 }
 
-/* -------------bg-button---------------- */
-.btn-primary {
-  width: 171px;
-  height: 58px;
+/* --------------button---------------- */
+.btn {
   background-color: var(--secondary-color);
-  border: none;
-  font-weight: var(--font-weight-semibold);
-  font-size: 24px;
-  line-height: 29px;
+
   color: var(--primary-color);
   text-transform: uppercase;
+  border: none;
+}
+
+.btn-search {
+  width: 171px;
+  height: 58px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: var(--font-weight-semibold);
 }
 
 /* ------------section-benefits---------------- */
@@ -195,28 +192,26 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 .benefits-title {
   color: var(--title-color);
   font-size: var(--font-size-x-large);
-  padding-left: 99px;
-  padding-top: 93px;
-  padding-bottom: 120px;
+  padding: 93px 0px 120px 99px;
 }
 
 /* -----------------------card----------------------------- */
-.benefits-card {
+.card-benefits {
   display: flex;
   padding-left: 100px;
 }
 
-.card-info {
-  width: 317px;
-  margin-right: 74px;
-}
-
-.info-image {
+.card-img-top {
   width: 66px;
   height: 66px;
 }
 
-.info-title {
+.card-body {
+  width: 317px;
+  margin-right: 74px;
+}
+
+.card-title-top {
   font-style: normal;
   font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
@@ -224,16 +219,15 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   padding-top: 37px;
 }
 
-.info-text {
+.card-text-top {
   font-size: var(--font-size-medium);
   line-height: var(--line-height-normal);
   margin-top: 26px;
   margin-bottom: 39px;
 }
 
-.card-item {
+.btn-more {
   display: inline-block;
-  text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-color);
   font-size: var(--font-size-large);
@@ -242,13 +236,14 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   padding: 10px 40px 10px 0;
   position: relative;
   transition: 0.5s linear;
+  background-color: none;
 }
 
 .card-item:hover {
   transform: translateY(-10px);
 }
 
-.card-item::after {
+.btn-more::after {
   position: absolute;
   content: "";
   width: 29px;
@@ -259,7 +254,7 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   transform: translateY(-50%);
 }
 
-.card-item::before {
+.btn-more::before {
   position: absolute;
   content: "";
   border: 4px solid;
