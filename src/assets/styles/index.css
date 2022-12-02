@@ -226,7 +226,7 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   margin-bottom: 39px;
 }
 
-.btn-more {
+.card-link {
   display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);
@@ -239,11 +239,11 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   background-color: none;
 }
 
-.card-item:hover {
+.card-link:hover {
   transform: translateY(-10px);
 }
 
-.btn-more::after {
+.card-link::after {
   position: absolute;
   content: "";
   width: 29px;
@@ -254,7 +254,7 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   transform: translateY(-50%);
 }
 
-.btn-more::before {
+.card-link::before {
   position: absolute;
   content: "";
   border: 4px solid;
