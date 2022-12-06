@@ -1,0 +1,33 @@
+.f-headingTwo {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xxx-large);
+  line-height: var(--line-height-xxx-large);
+}
+
+.f-headingThree {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xx-large);
+  line-height: var(--line-height-xx-large);
+}
+
+.f-text {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-medium);
+}
+
+.f-medium {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+}
+
+.f-input {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+}
+
+.f-button {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+}
