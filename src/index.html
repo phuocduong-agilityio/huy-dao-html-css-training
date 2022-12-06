@@ -15,12 +15,12 @@
           <div class="container-fluid">
             <h1>
               <img
-                class="navbar-icon"
-                src="./assets/images/header/odigo-Logo.png"
+                class="navbar-icon d-flex"
+                src="./assets/images/headers/odigo-Logo.png"
                 alt="travel-odigo"
               />
             </h1>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex">
               <li class="nav-item">
                 <a class="nav-link" href="javascript:void(0)">Articles</a>
               </li>
@@ -45,87 +45,85 @@
             open the door,
           </p>
           <div class="hero-form">
-            <div class="form-check">
+            <form class="form-check" action="javascript:void(0);">
               <input
                 class="form-check-input"
                 type="checkbox"
-                id="flexCheckDefault"
+                id="whatyoulike"
                 hidden
               />
-              <label class="form-check-label" for="flexCheckDefault"></label>
+              <label class="form-check-label" for="whatyoulike"></label>
               <input
                 class="form-check-control"
                 type="text"
-                value="What would you like to do?"
                 placeholder="What would you like to do?"
               />
-            </div>
-            <div class="form-check">
+            </form>
+            <form class="form-check" action="javascript:void(0);">
               <input
                 class="form-check-input"
                 type="checkbox"
-                id="flexCheckChecked"
+                id="whereyoulike"
                 hidden
               />
-              <label class="form-check-label" for="flexCheckChecked"></label>
+              <label class="form-check-label" for="whereyoulike"></label>
               <input
                 class="form-check-control"
                 type="text"
-                value="Where would you like to go?"
                 placeholder="Where would you like to go?"
               />
-            </div>
+            </form>
             <button class="btn btn-search">search</button>
           </div>
         </section>
-        <div class="section-benefits">
+        <section class="benefits">
           <h2 class="benefits-title">Benefits of Odigo</h2>
-          <div class="card-benefits">
-            <div class="card-body">
+          <div class="card">
+            <article class="card-body">
               <img
-                class="card-img-top"
-                src="./assets/images/benefits/icon.svg"
+                class="card-img"
+                src="./assets/images/benefits/home.svg"
                 alt="home"
               />
-              <h3 class="card-title-top">Welcome to Odigo!</h3>
-              <p class="card-text-top">
+              <h3 class="card-title-benefits">Welcome to Odigo!</h3>
+              <p class="card-text-benefits">
                 Jump off balcony, onto stranger's head. Chase ball of string
                 hide when guests come over.
               </p>
               <a href="javascript:void(0)" class="card-link">learn more</a>
-            </div>
-            <div class="card-body">
+            </article>
+            <article class="card-body">
               <img
-                class="card-img-top"
-                src="./assets/images/benefits/icon-1.svg"
+                class="card-img"
+                src="./assets/images/benefits/person.svg"
                 alt="home"
               />
-              <h3 class="card-title-top">Your Personal Japan Guide</h3>
-              <p class="card-text-top">
+              <h3 class="card-title-benefits">Your Personal Japan Guide</h3>
+              <p class="card-text-benefits">
                 Jump off balcony, onto stranger's head. Chase ball of string
                 hide when guests come over.
               </p>
               <a href="javascript:void(0)" class="card-link">learn more</a>
-            </div>
-            <div class="card-body">
+            </article>
+            <article class="card-body">
               <img
-                class="info-image"
-                src="./assets/images/benefits/icon-2.svg"
+                class="card-img"
+                src="./assets/images/benefits/businesses.svg"
                 alt="home"
               />
-              <h3 class="card-title-top">Promoting Local Businesses</h3>
-              <p class="card-text-top">
+              <h3 class="card-title-benefits">Promoting Local Businesses</h3>
+              <p class="card-text-benefits">
                 Jump off balcony, onto stranger's head. Chase ball of string
                 hide when guests come over.
               </p>
               <a href="javascript:void(0)" class="card-link">learn more</a>
-            </div>
+            </article>
           </div>
-        </div>
+        </section>
       </header>
       <!---------------------main---------------------------->
       <main class="main">
-        <div class="section-trip">
+        <section class="section-trip">
           <div class="trip-photo">
             <h2 class="photo-title">Get inspired for your next trip</h2>
             <a class="card-link" href="javascript:void(0)">view all</a>
@@ -133,38 +131,38 @@
           <div class="trip-item">
             <img
               class="img-thumbnail"
-              src="./assets/images/trip/mount-fuji.jpg"
+              src="./assets/images/trips/mount-fuji.jpg"
               alt="mount-fuji"
             />
             <img
               class="img-thumbnail"
-              src="./assets/images/trip/kyoto.jpg"
+              src="./assets/images/trips/kyoto.jpg"
               alt="kyoto"
             />
           </div>
           <div class="trip-item">
             <img
               class="img-thumbnail"
-              src="./assets/images/trip/tokyo-1.jpg"
+              src="./assets/images/trips/tokyo-1.jpg"
               alt="tokyo"
             />
             <img
               class="img-thumbnail"
-              src="./assets/images/trip/niigata.jpg"
+              src="./assets/images/trips/niigata.jpg"
               alt="niigata"
             />
             <img
               class="img-thumbnail"
-              src="./assets/images/trip/sapporo.jpg"
+              src="./assets/images/trips/sapporo.jpg"
               alt="sapporo"
             />
           </div>
-        </div>
-        <div class="information-details">
+        </section>
+        <section class="information-details">
           <div class="details-card">
             <img
               class="card-img-bottom"
-              src="./assets/images/trip/tottori.jpg"
+              src="./assets/images/trips/tottori.jpg"
               alt="tottori"
             />
             <article class="card-box">
@@ -183,7 +181,7 @@
           <div class="details-card details-card-bottom">
             <img
               class="card-photo card-photo-bottom"
-              src="./assets/images/trip/kyoto-arashiyama.jpg"
+              src="./assets/images/trips/kyoto-arashiyama.jpg"
               alt="kyoto-arashiyama"
             />
             <article class="card-box card-box-bottom">
@@ -201,11 +199,11 @@
               </a>
             </article>
           </div>
-        </div>
+        </section>
         <div class="visit-details">
-          <h2 class="photo-title photo-title-visit">
+          <h3 class="photo-title photo-title-visit">
             Today top places to visit
-          </h2>
+          </h3>
           <div class="card-wrapper">
             <div>
               <div class="visit-card">
@@ -216,7 +214,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -224,7 +222,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -249,7 +247,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -257,7 +255,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -282,7 +280,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -290,7 +288,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -315,7 +313,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -323,7 +321,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -348,7 +346,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -356,7 +354,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -381,7 +379,7 @@
                       <p class="icon-text">221</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/heart.svg"
+                        src="./assets/images/places/heart.svg"
                         alt="heart"
                       />
                     </div>
@@ -389,7 +387,7 @@
                       <p class="icon-text">50</p>
                       <img
                         class="icon-photo"
-                        src="./assets/images/trip/message.svg"
+                        src="./assets/images/places/message.svg"
                         alt="heart"
                       />
                     </div>
@@ -414,7 +412,7 @@
           id="video"
           class="video-demo"
           src="./assets/videos/japan.mp4"
-          poster="./assets/images/footer/tokyo-city.jpg"
+          poster="./assets/images/footers/tokyo-city.jpg"
           controls
           loop
         ></video>
@@ -425,48 +423,64 @@
           >
             <img
               class="odigo-logo"
-              src="./assets/images/header/odigo-Logo.png"
+              src="./assets/images/headers/odigo-Logo.png"
               alt="odigo-Logo"
             />
           </section>
           <div class="info-container">
-            <ul class="info-detail">
-              <li class="info-heading">Company</li>
-              <li><a class="info-item" href="javascript:void(0)">About</a></li>
-              <li><a class="info-item" href="javascript:void(0)">Teams</a></li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Careers</a>
-              </li>
-              <li>
-                <a class="info-item" href="javascript:void(0)"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-            <ul class="info-detail">
-              <li class="info-heading">Locations</li>
-              <li><a class="info-item" href="javascript:void(0)">Tokyo</a></li>
-              <li><a class="info-item" href="javascript:void(0)">Kyoto</a></li>
-              <li><a class="info-item" href="javascript:void(0)">Osaka</a></li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Hokkaido</a>
-              </li>
-            </ul>
-            <ul class="info-detail">
-              <li class="info-heading">Social Media</li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Facebook</a>
-              </li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Twitter</a>
-              </li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Instagran</a>
-              </li>
-              <li>
-                <a class="info-item" href="javascript:void(0)">Youtube</a>
-              </li>
-            </ul>
+            <div class="info-details">
+              <h4 class="info-heading">company</h4>
+              <ul class="list-group">
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">about</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">teams</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">careers</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)"
+                    >privacy policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="info-details">
+              <h4 class="info-heading">locations</h4>
+              <ul class="list-group">
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">tokyo</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">kyoto</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">osaka</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">hokkaido</a>
+                </li>
+              </ul>
+            </div>
+            <div class="info-details">
+              <h4 class="info-heading">social Media</h4>
+              <ul class="list-group">
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">facebook</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">twitter</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">instagran</a>
+                </li>
+                <li>
+                  <a class="list-group-item" href="javascript:void(0)">youtube</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
