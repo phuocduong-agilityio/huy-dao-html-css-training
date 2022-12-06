@@ -15,15 +15,20 @@
 
   /* -------------font-weight-------------- */
   --font-weight-semibold: 500;
-  --font-weight-bold: 700;
 
   /* -------------font-size---------------- */
-  --font-size-medium: 16px;
-  --font-size-large: 18px;
-  --font-size-x-large: 35px;
+  --font-size-small: 16px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-x-large: 30px;
+  --font-size-xx-large: 35px;
   --font-size-xxx-large: 50px;
 
   /* -------------line-height-------------- */
-  --line-height-normal: 24px;
-  --line-height-large: 60px;
+  --line-height-small: 19px;
+  --line-height-medium: 24px;
+  --line-height-large: 29px;
+  --line-height-x-large: 40px;
+  --line-height-xx-large: 42px;
+  --line-height-xxx-large: 60px;
 }
