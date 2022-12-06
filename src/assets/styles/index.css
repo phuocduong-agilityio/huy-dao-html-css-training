@@ -1,11 +1,13 @@
 @import url(../styles/variables.css);
 @import url(../styles/reset.css);
+@import url(../styles/font-word.css);
 
 /* ------------body------------------- */
 body {
   padding: 0;
   margin: 0 auto;
   font-family: var(--font-family);
+  font-style: normal;
 }
 
 /* -----------wrapper ----------------------*/
@@ -45,15 +47,12 @@ p {
 
 .navbar-nav {
   display: flex;
-  list-style: none;
   gap: 82px;
 }
 
 .nav-link {
   display: inline-block;
-  text-decoration: none;
   color: var(--primary-color);
-  font-size: var(--font-size-large);
   transition: 0.5s linear;
 }
 
@@ -72,9 +71,6 @@ p {
 
 .hero-title {
   width: 619px;
-  font-size: var(--font-size-xxx-large);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-large);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,8 +78,6 @@ p {
 
 .hero-text {
   width: 546px;
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
   margin-top: 13px;
   overflow: hidden;
   display: -webkit-box;
@@ -143,18 +137,17 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .form-check-control {
-  font-style: normal;
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-large);
-  line-height: var(--line-height-normal);
   background-color: rgba(0, 0, 0, 0.1);
   color: var(--primary-color);
   border: none;
   margin: 0 80px 30px 0;
 }
 
-.form-check-control::placeholder{
+.form-check-control::placeholder {
   color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-hieght-medium);
 }
 
 /* --------------button---------------- */
@@ -174,9 +167,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 .btn-search {
   width: 171px;
   height: 58px;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: var(--font-weight-semibold);
 }
 
 /* ------------section-benefits---------------- */
@@ -189,7 +179,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 
 .benefits-title {
   color: var(--title-color);
-  font-size: var(--font-size-x-large);
   margin-bottom: 120px;
 }
 
@@ -209,16 +198,11 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .card-title-benefits {
-  font-style: normal;
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-normal);
   margin-top: 37px;
+  font-weight: var(--font-weight-semibold);
 }
 
 .card-text-benefits {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
   margin-top: 26px;
   margin-bottom: 39px;
 }
@@ -227,9 +211,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-normal);
   padding: 10px 26px 10px 0;
   position: relative;
   transition: 0.5s linear;
