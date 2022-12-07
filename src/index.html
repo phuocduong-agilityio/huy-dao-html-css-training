@@ -53,35 +53,37 @@
             open the door,
           </p>
           <div class="hero-form">
-            <form class="form-check" action="javascript:void(0);">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="whatyoulike"
-                hidden
-              />
-              <label class="form-check-label" for="whatyoulike"></label>
-              <input
-                class="form-check-control f-input"
-                type="text"
-                placeholder="What would you like to do?"
-              />
+            <form action="javascript:void(0);">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="whatyoulike"
+                  hidden
+                />
+                <label class="form-check-label" for="whatyoulike"></label>
+                <input
+                  class="form-check-control f-input"
+                  type="text"
+                  placeholder="What would you like to do?"
+                />
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="whereyoulike"
+                  hidden
+                />
+                <label class="form-check-label" for="whereyoulike"></label>
+                <input
+                  class="form-check-control f-input"
+                  type="text"
+                  placeholder="Where would you like to go?"
+                />
+              </div>
+              <button class="btn btn-search f-button">search</button>
             </form>
-            <form class="form-check" action="javascript:void(0);">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="whereyoulike"
-                hidden
-              />
-              <label class="form-check-label" for="whereyoulike"></label>
-              <input
-                class="form-check-control f-input"
-                type="text"
-                placeholder="Where would you like to go?"
-              />
-            </form>
-            <button class="btn btn-search f-button">search</button>
           </div>
         </section>
         <section class="benefits">
@@ -176,14 +178,14 @@
             />
           </div>
         </section>
-        <section class="information-details">
-          <div class="details-card">
+        <div class="information-details">
+          <article class="details-card">
             <img
               class="card-img-bottom"
               src="./assets/images/trips/tottori.jpg"
               alt="tottori"
             />
-            <article class="card-box">
+            <section class="card-box">
               <h2 class="card-title">Prefecture in Focus: Tottori</h2>
               <p class="card-text">
                 Jump off balcony, onto stranger's head. Chase ball of string
@@ -194,15 +196,15 @@
               <a href="javascript:void(0)" class="card-link">
                 view prefecture
               </a>
-            </article>
-          </div>
-          <div class="details-card details-card-bottom">
+            </section>
+          </article>
+          <article class="details-card details-card-bottom">
             <img
               class="card-photo card-photo-bottom"
               src="./assets/images/trips/kyoto-arashiyama.jpg"
               alt="kyoto-arashiyama"
             />
-            <article class="card-box card-box-bottom">
+            <section class="card-box card-box-bottom">
               <h2 class="card-title card-title-bottom">
                 Featured Neighborhood: Kyoto’s Arashiyama
               </h2>
@@ -215,15 +217,15 @@
               <a href="javascript:void(0)" class="card-link"
                 >view neighborhood
               </a>
-            </article>
-          </div>
-        </section>
-        <div class="visit-details">
+            </section>
+          </article>
+        </div>
+        <section class="visit-details">
           <h3 class="photo-title photo-title-visit">
             Today top places to visit
           </h3>
           <div class="card-wrapper">
-            <div>
+            <article>
               <div class="visit-card">
                 <div class="card-icon">
                   <p class="icon-text">nagoya</p>
@@ -255,8 +257,8 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
-            <div>
+            </article>
+            <article>
               <div class="visit-card visit-card-niigita">
                 <div class="card-icon">
                   <p class="icon-text">niigita</p>
@@ -288,8 +290,8 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
-            <div>
+            </article>
+            <article>
               <div class="visit-card visit-card-osaka">
                 <div class="card-icon">
                   <p class="icon-text">osaka</p>
@@ -321,8 +323,8 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
-            <div>
+            </article>
+            <article>
               <div class="visit-card visit-card-saitama">
                 <div class="card-icon">
                   <p class="icon-text">saitama</p>
@@ -354,8 +356,8 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
-            <div>
+            </article>
+            <article>
               <div class="visit-card visit-card-ueno">
                 <div class="card-icon">
                   <p class="icon-text">ueno</p>
@@ -387,8 +389,8 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
-            <div>
+            </article>
+            <article>
               <div class="visit-card visit-card-shibuya">
                 <div class="card-icon">
                   <p class="icon-text">shibuya</p>
@@ -420,9 +422,9 @@
                 </p>
                 <button class="btn btn-more">see more</button>
               </div>
-            </div>
+            </article>
           </div>
-        </div>
+        </section>
       </main>
       <!-------------------------- footer ----------------------->
       <footer>
