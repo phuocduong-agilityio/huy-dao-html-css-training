@@ -90,11 +90,14 @@ p {
 }
 
 .hero-form {
-  display: flex;
   margin-top: 56px;
 }
 
 /* ------------------------form-check-------------- */
+.form-input{
+  display: flex;
+}
+
 .form-check {
   position: relative;
   display: flex;
@@ -199,7 +202,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 
 .card-title-benefits {
   margin-top: 37px;
-  font-weight: var(--font-weight-semibold);
 }
 
 .card-text-benefits {
@@ -272,10 +274,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .photo-title {
-  color: var(--title-color);
-  font-size: var(--font-size-x-large);
-  font-weight: var(--font-weight-semibold);
-  line-height: 42px;
   padding-bottom: 10px;
   position: relative;
 }
@@ -305,21 +303,16 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .card-title {
-  font-weight: var(--font-weight-bold);
-  font-size: 30px;
-  line-height: 40px;
   color: var(--title-color);
   margin: 20px 0 85px 0;
 }
 
 .card-text {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
   width: 80%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   height: 75px;
   margin-bottom: 58px;
 }
@@ -400,9 +393,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .icon-text {
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-large);
-  line-height: var(--line-height-normal);
   padding-left: 25px;
 }
 
@@ -420,8 +410,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 }
 
 .text-more {
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
   margin-bottom: 14px;
   width: 362px;
 }
@@ -429,7 +417,6 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 .btn-more {
   width: 118px;
   height: 42px;
-  font-size: var(--font-size-medium);
   line-height: 19px;
 }
 
@@ -462,9 +449,7 @@ input[class="form-check-input"]:checked + .form-check-label::after {
 
 .odigo-info {
   background-color: #0e1d28;
-  padding-top: 119px;
-  padding-left: 194px;
-  padding-right: 167px;
+  padding: 119px 167px 0 194px;
   height: 370px;
   display: flex;
   gap: 356px;
@@ -489,15 +474,7 @@ input[class="form-check-input"]:checked + .form-check-label::after {
   display: flex;
   justify-content: space-between;
 }
-.info-heading {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-semibold);
-  list-style: var(--line-height-normal);
-}
 .list-group-item {
-  text-decoration: none;
-  font-size: var(--font-size-medium);
-  line-height: var(--line-height-normal);
   display: flex;
   flex-wrap: wrap;
 }
