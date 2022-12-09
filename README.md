@@ -11,6 +11,7 @@
   - As an IT, I choose to lead you to visit this cherry blossom country through the page with vivid pictures and general information about this place. This is the fastest way for you to feel and fully gain information about Japan in one visit.
 - Design: [Figma](https://www.figma.com/file/GEdIowP8MaUWaMRaArKe4W/travel-landing-page-jacobvoyles?node-id=810%3A2&t=UTw1OUomyqhfotSl-0).
 - Plan: [Plan pratice-one](https://docs.google.com/document/d/1tyIvtr1o-Z8xonDhbTxwYCsDIyozqLfy1ToZvMhNKP0/edit).
+- Deloy: [Here](https://travel-odigo-page.netlify.app/).
 
 **Target**
 
