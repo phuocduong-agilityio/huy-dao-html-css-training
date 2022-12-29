@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+:root {
+  /* --------------font-------------------- */
+  --font-family: "Lato";
+
+  /* -------------color-------------------- */
+  --primary-color: #fff;
+  --secondary-color: #006dfe;
+  --title-color: #102746;
+  --footer-color: #0e1d28;
+
+  /* -------------font-weight-------------- */
+  --font-weight-semibold: 500;
+
+  /* -------------font-size---------------- */
+  --font-size-small: 16px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-x-large: 30px;
+  --font-size-xx-large: 35px;
+  --font-size-xxx-large: 50px;
+
+  /* -------------line-height-------------- */
+  --line-height-small: 19px;
+  --line-height-medium: 24px;
+  --line-height-large: 29px;
+  --line-height-x-large: 40px;
+  --line-height-xx-large: 42px;
+  --line-height-xxx-large: 60px;
+}

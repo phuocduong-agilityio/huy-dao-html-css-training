@@ -1,0 +1,485 @@
+@import url(../styles/variables.css);
+@import url(../styles/reset.css);
+@import url(../styles/font-word.css);
+
+/* ------------body------------------- */
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-style: normal;
+}
+
+/* -----------wrapper ----------------------*/
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* -------------tags------------------ */
+p {
+  font-style: normal;
+}
+
+/* ------------header---------------------- */
+.header {
+  width: 100%;
+  height: 962px;
+  background: linear-gradient(to top, rgba(16, 39, 70, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../images/headers/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------menu------------------------- */
+.container-fluid {
+  padding: 42px 167px 0px 191px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-icon {
+  width: 82px;
+  height: 31px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 82px;
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--primary-color);
+  transition: 0.5s linear;
+}
+
+.nav-link:hover {
+  transform: translateY(-10px);
+}
+
+/* ---------------bg-hero---------------------------------- */
+.homepage-hero {
+  height: auto;
+  padding-top: 15px;
+  padding-left: 191px;
+  color: var(--primary-color);
+  margin-top: 176px;
+}
+
+.hero-title {
+  width: 619px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+  width: 546px;
+  margin-top: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.hero-text:hover {
+  overflow: visible;
+}
+
+.hero-form {
+  margin-top: 56px;
+}
+
+/* ------------------------form-check-------------- */
+.form-input{
+  display: flex;
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+}
+
+.form-check-label {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  margin-right: 23px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-check-label::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[class="form-check-input"]:checked + .form-check-label::after {
+  background-color: white;
+}
+
+.form-check::after {
+  position: absolute;
+  content: "";
+  width: 297px;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 12px;
+  left: 0;
+}
+
+.form-check-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+  border: none;
+  margin: 0 80px 30px 0;
+}
+
+.form-check-control::placeholder {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-hieght-medium);
+}
+
+/* --------------button---------------- */
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  border: none;
+  transition: 0.5s linear;
+}
+
+.btn:hover {
+  background-color: #000;
+  transform: translateX(15px);
+}
+
+.btn-search {
+  width: 171px;
+  height: 58px;
+}
+
+/* ------------section-benefits---------------- */
+.benefits {
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  background-color: var(--primary-color);
+  margin: 153px 72px 0px 106px;
+  padding: 93px 0px 112px 99px;
+}
+
+.benefits-title {
+  color: var(--title-color);
+  margin-bottom: 120px;
+}
+
+/* -----------------------card----------------------------- */
+.card {
+  display: flex;
+  gap: 74px;
+}
+
+.card-img {
+  width: 66px;
+  height: 66px;
+}
+
+.card-body {
+  width: 297px;
+}
+
+.card-title-benefits {
+  margin-top: 37px;
+}
+
+.card-text-benefits {
+  margin-top: 26px;
+  margin-bottom: 39px;
+}
+
+.card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 10px 26px 10px 0;
+  position: relative;
+  transition: 0.5s linear;
+  background-color: none;
+  text-transform: uppercase;
+}
+
+.card-link:hover {
+  transform: translateY(-10px);
+}
+
+.card-link::after {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  top: 50%;
+  right: -30%;
+  transform: translateY(-50%);
+}
+
+.card-link::before {
+  position: absolute;
+  content: "";
+  border: 8px solid;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  right: calc(-30% - 15px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* -----------------------main----------------------------- */
+.main {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* -----------------------photo-------------------------- */
+.section-trip {
+  margin: 500px 107px 131px;
+}
+
+/* -----------------------photo-title-------------- */
+.trip-photo {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+
+.trip-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-title {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.photo-title::after {
+  position: absolute;
+  content: "";
+  width: 255px;
+  height: 0.9mm;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  left: 0;
+}
+
+.img-thumbnail {
+  margin: 0 10px 10px 0;
+}
+
+/* -------------------------infomation-details-----------------*/
+.information-details {
+  padding-left: 85px;
+}
+
+.details-card {
+  display: flex;
+  gap: 108px;
+}
+
+.card-title {
+  color: var(--title-color);
+  margin: 20px 0 85px 0;
+}
+
+.card-text {
+  width: 80%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  height: 75px;
+  margin-bottom: 58px;
+}
+
+.card-text:hover {
+  overflow: visible;
+}
+
+.details-card-bottom {
+  flex-direction: row-reverse;
+  padding-top: 76px;
+}
+
+.card-box-bottom {
+  padding-left: 53px;
+}
+
+.card-title-bottom {
+  width: 357px;
+}
+
+.card-text-bottom {
+  width: 505px;
+}
+
+.card-photo-bottom {
+  padding-right: 78px;
+}
+
+/* -------------------visit-details------------------- */
+.visit-details {
+  margin: 140px 0 0 80px;
+}
+
+.photo-title-visit {
+  margin-bottom: 64px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 57px;
+}
+
+.visit-card {
+  background-image: url(../images/places/nagoya.jpg);
+  width: 386px;
+  height: 377px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card-icon {
+  background-color: rgba(21, 24, 36, 0.6);
+  position: absolute;
+  width: 100%;
+  color: var(--primary-color);
+  display: flex;
+  text-transform: uppercase;
+  height: 55px;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.icon-box,
+.icon-text {
+  flex: 1;
+}
+
+.icon-box {
+  display: flex;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-text {
+  padding-left: 25px;
+}
+
+.icon-photo {
+  width: 16px;
+  height: 15px;
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+/* -----------------------------card-more------------------- */
+.card-more {
+  width: 386px;
+  padding-top: 62px;
+}
+
+.text-more {
+  margin-bottom: 14px;
+  width: 362px;
+}
+
+.btn-more {
+  width: 118px;
+  height: 42px;
+  line-height: 19px;
+}
+
+.visit-card-niigita {
+  background-image: url(../images/places/snow.jpg);
+}
+
+.visit-card-osaka {
+  background-image: url(../images/places/osaka.jpg);
+}
+
+.visit-card-saitama {
+  background-image: url(../images/places/saitama.jpg);
+}
+
+.visit-card-ueno {
+  background-image: url(../images/places/ueno.jpg);
+}
+
+.visit-card-shibuya {
+  background-image: url(../images/places/shibuya.jpg);
+}
+
+/* ---------------------footer----------------------- */
+.video-demo {
+  width: 100%;
+  height: 609px;
+  margin-top: 144px;
+}
+
+.odigo-info {
+  background-color: #0e1d28;
+  padding: 119px 167px 0 194px;
+  height: 370px;
+  display: flex;
+  gap: 356px;
+  justify-items: center;
+}
+
+.info-container,
+.odigo-info {
+  flex: 1;
+}
+
+.odigo-logo {
+  width: 170px;
+  height: 64px;
+}
+.info-heading,
+.list-group-item {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+.list-group-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
