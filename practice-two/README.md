@@ -50,8 +50,8 @@
 **Infomation**
 
 - Timeline
-  - Estimate day: 5 days.
-  - From 2022/11/14 to 2022/11/21.
+  - Estimate day: 7 days.
+  - From 2022/12/29 to 2022/01/13.
 - Editor: Visual Studio Code.
 - Supported browser: Chrome latest.
 
