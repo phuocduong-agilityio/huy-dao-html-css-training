@@ -1,0 +1,25 @@
+{
+  "name": "practice-two",
+  "description": "HTML/CSS practice-two",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/phuocduong-agilityio/huy-dao-html-css-training.git"
+  },
+  "author": "Huy Dao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuocduong-agilityio/huy-dao-html-css-training/issues"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.2"
+  }
+}
