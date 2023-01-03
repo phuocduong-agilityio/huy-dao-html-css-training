@@ -17,9 +17,9 @@
     "url": "https://github.com/phuocduong-agilityio/huy-dao-html-css-training/issues"
   },
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "2.8.2"
   },
   "dependencies": {
-    "@parcel/transformer-sass": "^2.8.2"
+    "@parcel/transformer-sass": "2.8.2"
   }
 }
