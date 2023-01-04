@@ -1,0 +1,13 @@
+.navbar {
+  margin: 0 auto;
+}
+
+@include tablet{
+  .navbar{
+    width: 100%;
+  }
+}
+
+@include desktop{
+  
+}
