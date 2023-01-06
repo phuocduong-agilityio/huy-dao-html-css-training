@@ -1,12 +1,11 @@
-
+.btn{
+  text-transform: uppercase;
+}
 
 .btn-primary{
+  border: none;
+  background-color: $color-green;
+  color: $color-white;
   width: 110px;
   height: 25px;
-  font-weight: $font-weight-extraBold;
-  font-size: 11px;
-  line-height: 13px;
-  color: #fff;
-  background-color: $color-green;
-  border: none;
 }

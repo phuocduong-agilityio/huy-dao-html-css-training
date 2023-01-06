@@ -1,0 +1,64 @@
+.nav-toggler {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.close {
+  display: none;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.navbar-collapse {
+  width: 100%;
+  position: fixed;
+  padding-left: 5px;
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in-out;
+  top: 40px;
+}
+
+.nav-checkbox:checked ~ .navbar-collapse {
+  transform: translate(0%);
+}
+
+.nav-overlay{
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.nav-checkbox:checked ~ .nav-overlay {
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  background-color: $color-green;
+  width: 71px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: $color-black;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: $font-weight-extraBold;
+}
