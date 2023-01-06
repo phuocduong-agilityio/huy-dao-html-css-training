@@ -62,3 +62,23 @@
   line-height: 13px;
   font-weight: $font-weight-extraBold;
 }
+
+@include tablet{
+  .nav-toggler{
+    display: none;
+  }
+
+  .navbar-collapse{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: none;
+    left: 250px;
+    top: 0;
+  }
+
+  .navbar-nav{
+    display: flex;
+    gap: 26px;
+  }
+}
