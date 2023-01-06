@@ -22,15 +22,18 @@
                   class="brand-logo"
                   src="./assets/images/headers/logo.svg"
                   alt="logo"
-                /><span class="brand-name">NinjaMail</span>
+                />
               </a>
             </h1>
-            <input type="checkbox" id="navbar-toggler" class="navbar-toggler" />
-            <label class="navbar-label" for="navbar-toggler">
-              <div class="burger"></div>
-              <div class="burger"></div>
-              <div class="burger"></div>
+            <input type="checkbox" class="nav-checkbox" id="nav-checkbox" />
+            <label for="nav-checkbox" class="nav-toggler">
+              <img
+                class="menu-icon"
+                src="./assets/images/headers/bar.svg"
+                alt="bar"
+              />
             </label>
+            <lable class="nav-overlay" for="nav-checkbox"></lable>
             <div class="navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -46,7 +49,7 @@
                   <a class="nav-link" href="javascript:void(0);">partners</a>
                 </li>
               </ul>
-              <!-- <button class="btn btn-primary">sign up free</button> -->
+              <button class="btn btn-primary nav-link">sign up free</button>
             </div>
           </div>
         </nav>
