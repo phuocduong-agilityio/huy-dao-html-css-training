@@ -5,3 +5,10 @@
 .menu-icon{
   width: 25px;
 }
+
+@include desktop {
+  .brand-logo{
+    width: 270px;
+    height: 82px;
+  }
+}

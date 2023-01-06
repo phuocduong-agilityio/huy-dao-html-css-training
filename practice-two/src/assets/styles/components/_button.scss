@@ -9,3 +9,10 @@
   width: 110px;
   height: 25px;
 }
+
+@include desktop {
+  .btn-primary{
+    width: 168px;
+    height: 41px;
+  }
+}

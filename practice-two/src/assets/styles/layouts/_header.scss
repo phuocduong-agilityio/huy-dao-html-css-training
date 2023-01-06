@@ -3,3 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+@include desktop {
+  .container-fluid {
+    padding: 21px 100px 0 73px;
+  }
+}

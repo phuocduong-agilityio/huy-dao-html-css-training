@@ -82,3 +82,31 @@
     gap: 26px;
   }
 }
+
+@include desktop {
+
+  .navbar-collapse{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: none;
+    top: 18px;
+    left: 43%;
+  }
+
+  .nav-item{
+    padding: 13px;
+  }
+
+  .nav-link {
+    color: $color-black;
+    font-size: $font-size-small;
+    line-height: $line-height-x-small;
+    font-weight: $font-weight-extraBold;
+  }
+
+  .nav-item::after{
+    width: 110px;
+    height: 5px;
+  }
+}
