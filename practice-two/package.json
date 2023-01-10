@@ -3,7 +3,7 @@
   "description": "HTML/CSS practice-two",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --no-cache",
     "watch": "parcel watch",
     "build": "parcel build"
   },
