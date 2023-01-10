@@ -7,3 +7,32 @@
   font-family: $font-family-secondary;
   src: url(../fonts/raleway.ttf);
 }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-primary;
+}
+
+p,
+a {
+  font-family: $font-family-secondary;
+  color: $color-black;
+}
+
+.font-nav {
+  font-size: 11px;
+  line-height: 23px;
+  font-weight: $font-weight-extraBold;
+  text-transform: uppercase;
+}
+
+.font-logo {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: $font-weight-bold;
+}
