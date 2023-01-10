@@ -1,13 +1,13 @@
+// font-family
+$font-family-primary: "playfairDisplay";
+$font-family-secondary: "raleway";
+
 @font-face {
-  font-family: "playfairDisplay";
+  font-family: $font-family-primary;
   src: url(../fonts/playfairDisplay.ttf);
 }
 
 @font-face {
-  font-family: "raleway";
+  font-family: $font-family-secondary;
   src: url(../fonts/raleway.ttf);
 }
-
-// font-family
-$font-family-primary: "playfairDisplay";
-$font-family-secondary: "raleway"
