@@ -23,13 +23,8 @@
 - Used popular browsers lastest version (Chrome, MS Edge, Safari, Firefox)
 
 ## Technical
-- HTML5:
-  - Correct use of the tag as : `<section>`, `<article>`,....
+- [HTML5](https://www.w3schools.com/html/).
 - [CSS3](https://web.dev/learn/css/):
-  - Selectors.
-  - Pseudo-elements.
-  - Border Style.
-  - Background style properties.
   - [Media queries](https://www.w3schools.com/css/css3_mediaqueries.asp).
   - [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/).
 - Node: "v16.18.0".
@@ -37,7 +32,7 @@
 ## Infomation
 
 - Timeline
-  - Estimate day: 7 days.
+  - Estimate day: 6 days ( part-time [2.5days/ week] ).
   - From 2022/12/29 to 2023/01/13.
 - Editor: Visual Studio Code.
 - Supported browser: Chrome, MS Edge, Safari, Firefox latest.
