@@ -5,7 +5,7 @@
 ## Overview
 
 - Introduce:
-  - As an IT, I will introduce you to a website that can help you do business smoothly. Whether you're a startup, small business, e-commerce store, or want to promote your app is still available.
+  - Build a responsive site for HTML/CSS practice that applied all knowledge in HTML/CSS reading plan.
 - Design: [Figma](<https://www.figma.com/file/5jV4JhfgpIadazK7Bt2UbU/NinjaMail-(Community)-(Copy)?node-id=1%3A362&t=5gQ9UpwtDjxaLOLS-0>).
 - Plan: [Plan pratice-two](https://docs.google.com/document/d/1XpV2cgLmxeeDDBmr6ZwQojGe2bmvq-xox9F2I-P6hGA/edit?usp=sharing).
 - Deloy: Here.
@@ -24,7 +24,7 @@
 
 ## Technical
 - HTML5:
-  - Use new tags.
+  - Correct use of the tag as : `<section>`, `<article>`,....
 - [CSS3](https://web.dev/learn/css/):
   - Selectors.
   - Pseudo-elements.
