@@ -8,6 +8,31 @@
   <title>NinjaMail</title>
 </head>
 <body>
-
+  <header class="header">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <h1 class="navbar-brand" onclick="window.location.reload();">
+          <a href="javascript:void(0)" class="brand-link">
+            <img class="brand-logo" src="./assets/images/headers/logo.svg" alt="logo-brand">
+            <p class="brand-text font-logo">NinjaMail</p>
+          </a>
+        </h1>
+        <input type="checkbox" class="navbar-checkbox" id="navbar-checkbox">
+        <label class="navbar-toggler" for="navbar-checkbox">
+          <img src="./assets/images/headers/bar.svg" alt="menu-icon" class="toggler-icon brand-logo">
+        </label>
+        <label for="navbar-checkbox" class="navbar-overlay"></label>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link font-nav">features</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link font-nav">pricing</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link font-nav">services</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link font-nav">partners</a></li>
+          </ul>
+          <button class="btn btn-primary font-nav">sign up free</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
